@@ -5,5 +5,6 @@ A simple template to base [Bevy](https://bevyengine.org/) tutorials from. Create
 # Usage
 
 ```
+cargo install cargo-generate
 cargo generate --git https://github.com/mwbryant/logic_projects_bevy_template
 ```
