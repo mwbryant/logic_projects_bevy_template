@@ -34,11 +34,11 @@ fn main() {
 fn spawn_camera(mut commands: Commands) {
     let mut camera = OrthographicCameraBundle::new_2d();
 
-    camera.orthographic_projection.right = HEIGHT / 2.0 * RESOLUTION;
-    camera.orthographic_projection.left = -HEIGHT / 2.0 * RESOLUTION;
+    camera.orthographic_projection.right = 1.0 * RESOLUTION;
+    camera.orthographic_projection.left = -1.0 * RESOLUTION;
 
-    camera.orthographic_projection.top = HEIGHT / 2.0;
-    camera.orthographic_projection.bottom = -HEIGHT / 2.0;
+    camera.orthographic_projection.top = 1.0;
+    camera.orthographic_projection.bottom = -1.0;
 
     camera.orthographic_projection.scaling_mode = ScalingMode::None;
 
